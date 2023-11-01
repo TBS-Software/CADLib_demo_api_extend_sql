@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net45</TargetFramework>
+    <OutDir>$(SolutionDir)bin\$(Configuration)</OutDir>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <LangVersion>7.0</LangVersion>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Platforms>x64</Platforms>
+    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+    <GenerateDependencyFile>true</GenerateDependencyFile>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <Configurations>Debug;Release</Configurations>
+    <AssemblyVersion>0.0.1</AssemblyVersion>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="sql\TBS_CADLib_demo_GettingObjects_pgsql.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="sql\TBS_CADLib_demo_GettingObjects_pgsql.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="CADLibControls">
+      <HintPath>C:\Program Files (x86)\CSoft\Model Studio CS\Viewer\bin\x64\CADLibControls.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CADLibKernel">
+      <HintPath>C:\Program Files (x86)\CSoft\Model Studio CS\Viewer\bin\x64\CADLibKernel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NData">
+      <HintPath>C:\Program Files (x86)\CSoft\Model Studio CS\Viewer\bin\x64\NData.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NData">
+      <HintPath>C:\Program Files (x86)\CSoft\Model Studio CS\Viewer\bin\x64\CdeLib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+</Project>
