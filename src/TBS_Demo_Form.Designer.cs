@@ -74,14 +74,14 @@
             // 
             this.MenuItem_UsingAutoSQL.Name = "MenuItem_UsingAutoSQL";
             this.MenuItem_UsingAutoSQL.Size = new System.Drawing.Size(273, 22);
-            this.MenuItem_UsingAutoSQL.Text = "Исполнить запрос автоматически";
+            this.MenuItem_UsingAutoSQL.Text = "Исполнить запрос SQL автоматически";
             this.MenuItem_UsingAutoSQL.Click += new System.EventHandler(this.MenuItem_UsingAutoSQL_Click);
             // 
             // MenuItem_UsingManualSQL
             // 
             this.MenuItem_UsingManualSQL.Name = "MenuItem_UsingManualSQL";
             this.MenuItem_UsingManualSQL.Size = new System.Drawing.Size(273, 22);
-            this.MenuItem_UsingManualSQL.Text = "Исполнить запрос вручную";
+            this.MenuItem_UsingManualSQL.Text = "Исполнить запрос SQL вручную";
             this.MenuItem_UsingManualSQL.Click += new System.EventHandler(this.MenuItem_UsingOpenSQL_Click);
             // 
             // TBS_Demo_Form

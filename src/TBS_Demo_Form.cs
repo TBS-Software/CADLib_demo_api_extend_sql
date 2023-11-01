@@ -23,7 +23,7 @@ namespace TBS_CADLib_demo_sql_connector
     {
         private const string dir_cadlib_output = @"C:\Windows\Temp";
         private const string file_cadlib_output = @"C:\Windows\Temp\cadlib_output.txt";
-        private void _DReportExchangeProgress(EDataExchangeProgress p, object value) { }
+        
         //dir_cadlib_output
 
 
@@ -45,6 +45,7 @@ namespace TBS_CADLib_demo_sql_connector
         public void TrackInterfaceItems(InterfaceTracker tracker)
         {
             tracker.Add(new InterfaceItemState(MenuItem_UsingAPI, LibConnectionState.Connected, LibFolderState.DoesNotMatter, LibObjectState.DoesNotMatter, LibRequiredPermission.Admin));
+            tracker.Add(new InterfaceItemState(MenuItem_UsingManualSQL, LibConnectionState.Connected, LibFolderState.DoesNotMatter, LibObjectState.DoesNotMatter, LibRequiredPermission.Admin));
             tracker.Add(new InterfaceItemState(MenuItem_UsingAutoSQL, LibConnectionState.Connected, LibFolderState.DoesNotMatter, LibObjectState.DoesNotMatter, LibRequiredPermission.Admin));
         }
         

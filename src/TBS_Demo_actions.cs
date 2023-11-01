@@ -183,7 +183,8 @@ namespace TBS_CADLib_demo_sql_connector
                 }
                 string PROJECT_CHECKIN_FILE_NAMES_str = string.Join("\r\n", PROJECT_CHECKIN_FILE_NAMES);
                 timer.Stop();
-                MessageBox.Show($"SQL запрос \n Файлы публикации с ошибками: {PROJECT_CHECKIN_FILE_NAMES_str} \n Время выполнения составило {timer.ElapsedMilliseconds} ms");
+                MessageBox.Show($"SQL запрос \n Файлы публикации с ошибками: {PROJECT_CHECKIN_FILE_NAMES_str}" +
+                    $" \n Время выполнения составило {timer.ElapsedMilliseconds} ms");
             }
         }
     }
